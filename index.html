@@ -5,8 +5,82 @@
     <title>Техномарт</title>
   </head>
   <body>
-
-
-
+    <header class="header">
+      <div class="header-banner">
+        <div class="container">
+          <p class="header-banner-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <address class="header-banner-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="header-banner" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </div>
+      </div>
+      <div class="header-row">
+        <div class="container">
+          <a class="logo nav-logo" href="index.html" aria-current="page">
+            <img src="#" width="108" height="18" alt="Логотип магазина: слово Техномарт, написано белыми заглавными буквами на красном фоне.">
+          </a>
+          <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="visually-hidden" for="">Поиск по сайту.</label>
+            <input class="header-search-field" type="search" name="header-search" id="header-search" placeholder="Поиск:">
+            <button class="visually-hidden" type="submit">Искать.</button>
+          </form>
+          <!-- logged-out - для разлогиненного состояния, делает login-logged-out видимым -->
+          <!-- logged-in - для залогиненного состояния, делает login-logged-in видимым -->
+          <div class="login-wrapper logged-out">
+            <div class="login login-logged-in">
+              <a class="login-user" href="#">
+                <img src="#" width="16" height="16">
+                <span class="login-username">Равшан Джамшутович</span>
+              </a>
+              <a class="login-button" href="#">
+                <span class="visually-hidden">Выйти.</span>
+              </a>
+            </div>
+            <div class="login login-logged-out">
+              <a class="login-button" href="#">
+                <span>Войти</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="container">
+          <ul class="nav-list list-reset">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Компания</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Спецпредложения</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav-menu">
+            <a class="nav-menu-button nav-menu-button-bookmarks" href="#">
+              <span class="visually-hidden">Перейти в закладки.</span>
+              <span class="nav-menu-button-counter"></span>
+            </a>
+            <a class="nav-menu-button nav-menu-button-cart" href="#">
+              <span class="visually-hidden">Перейти в корзину.</span>
+              <span class="nav-menu-button-counter"></span>
+            </a>
+            <a class="button button-secondary nav-menu-order" href="#">Оформить заказ</a>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
