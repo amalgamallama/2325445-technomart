@@ -153,6 +153,228 @@
           </ul>
         </div>
       </section>
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog-title">Перфораторы</h2>
+          <section class="filters">
+            <h3 class="visually-hidden">Параметры фильтрации.</h3>
+            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filter-group filter-group-range">
+                <legend class="filter-group-title">Цена</legend>
+                <div class="filter-range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; right: 91px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-range-input-wrapper">
+                  <label class="filter-range-label">
+                    <input class="range-input" type="number" name="range-min" id="range-min" value="0">
+                  </label>
+                  <span>–</span>
+                  <label class="filter-range-label">
+                    <input class="range-input" type="number" name="range-max" id="range-max" value="30000">
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-group-title">Производители</legend>
+                <ul class="filter-list list-reset">
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="bosch" checked>
+                      <span class="control-label">BOSCH</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="interskol">
+                      <span class="control-label">ИНТЕРСКОЛ</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="makita" checked>
+                      <span class="control-label">MAKIta</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="dewalt">
+                      <span class="control-label">Dewalt</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="hitachi">
+                      <span class="control-label">Hitachi</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-group-title">Питание</legend>
+                <ul class="filter-list list-reset">
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="power-source" value="battery-powered" checked>
+                      <span class="control-label">Аккумуляторные</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="power-source" value="mains-powered">
+                      <span class="control-label">Сетевые</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button button-bordered filter-button" type="submit">Показать</button>
+            </form>
+          </section>
+          <section class="results">
+            <select class="select-control" aria-label="Сортировка">
+              <option value="default" selected>Сортировать</option>
+              <option value="new">Новинки</option>
+              <option value="low-to-high">Подешевле</option>
+              <option value="high-to-low">Подороже</option>
+            </select>
+            <h3 class="visually-hidden">Результат фильтрации.</h3>
+            <ul class="card-list list-reset">
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <span class="product-card-old-price">22500 ₽</span>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <span class="product-card-old-price">22500 ₽</span>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <span class="product-card-old-price">22500 ₽</span>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <span class="product-card-old-price">22500 ₽</span>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <span class="product-card-old-price">22500 ₽</span>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="#" width="216" height="180" alt="Перфоратор с надписями Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary" type="button">Купить</button>
+                    <button class="button button-bordered" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <a class="product-card-new-price" href="#">15500 ₽</a>
+              </li>
+            </ul>
+            <div class="pagination">
+              <ol class="pagination-list list-reset">
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-link-current" href="#" aria-current="page">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-link-more" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">15</a>
+                </li>
+              </ol>
+              <a class="button results-button" href="#">Загрузить ещё</a>
+            </div>
+          </section>
+        </div>
+      </section>
     </main>
   </body>
 </html>
