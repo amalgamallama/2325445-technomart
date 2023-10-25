@@ -8,15 +8,15 @@
     <header class="header">
       <div class="header-banner">
         <div class="container">
-          <p class="header-banner-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <h1 class="header-banner-text">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <address class="header-banner-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a class="header-banner" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="header-banner-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
       </div>
       <div class="header-row">
         <div class="container">
           <a class="logo header-logo" href="index.html" aria-current="page">
-            <img src="#" width="108" height="18" alt="Логотип магазина: слово Техномарт, написано белыми заглавными буквами на красном фоне.">
+            <img src="#" width="108" height="18" alt="Логотип магазина: слово Техномарт, написанное белыми заглавными буквами на красном фоне.">
           </a>
           <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="">Поиск по сайту.</label>
@@ -27,18 +27,50 @@
           <!-- logged-in - для залогиненного состояния, делает login-logged-in видимым -->
           <div class="login-wrapper logged-out">
             <div class="login login-logged-in">
-              <a class="login-user" href="#">
+              <a class="login-user popup-control" href="#">
                 <img src="#" width="16" height="16" alt="">
                 <span class="login-username">Равшан Джамшутович</span>
               </a>
               <a class="login-button" href="#">
                 <span class="visually-hidden">Выйти.</span>
               </a>
+              <div class="popup login-popup login-popup-logged-in">
+                <h2 class="login-popup-title">Личный кабинет</h2>
+                <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <fieldset class="login-form-group">
+                    <label class="visually-hidden" for="login-field">Введите логин.</label>
+                    <input class="login-field" type="text" name="login-field" id="login-field" placeholder="Ваш e-mail" required>
+                    <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
+                    <input class="login-field" type="password" name="login-password-field" id="login-password-field" required>
+                    <label class="control login-control">
+                      <input class="control-input login-control-input" type="checkbox" name="remember-me" checked>
+                      <span class="control-label login-control-label">Запомнить меня</span>
+                    </label>
+                    <a class="login-form-link" href="#">Забыл пароль</a>
+                  </fieldset>
+                  <div class="login-form-buttons">
+                    <button class="button login-form-button-login" type="submit">Войти</button>
+                    <a class="button button-bordered" href="#">Регистрация</a>
+                  </div>
+                </form>
+                <button class="login-popup-close" type="button">
+                  <span class="visually-hidden">Закрыть всплывающее окно.</span>
+                </button>
+              </div>
             </div>
             <div class="login login-logged-out">
               <a class="login-button" href="#">
                 <span>Войти</span>
               </a>
+              <div class="popup login-popup login-popup-logged-out">
+                <h2 class="login-popup-title">Здравствуйте, <span class="login-popup-username">Равшан Джамшутович</span></h2>
+                <a class="login-popup-link" href="#">Мои заказы</a>
+                <a class="login-popup-link" href="#">Личный кабинет</a>
+                <button class="button button-bordered" type="button">Выйти</button>
+                <button class="login-popup-close" type="button">
+                  <span class="visually-hidden">Закрыть всплывающее окно.</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +117,6 @@
     <main class="main">
       <section class="hero">
         <div class="container">
-          <h1 class="visually-hidden">Техномарт: интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <div class="slider">
             <h2 class="visually-hidden">Промо-слайдер.</h2>
             <!-- Слайды -->
