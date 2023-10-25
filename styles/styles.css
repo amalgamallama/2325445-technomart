@@ -36,7 +36,15 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  height: 100%; /* sticky footer */
+  min-height: 100%; /* sticky footer */
+}
+
+body {
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
   margin: 0;
 
   font-family: "PT Sans", sans-serif;
@@ -64,4 +72,8 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.main {
+  flex-grow: 1; /* sticky footer */
 }
