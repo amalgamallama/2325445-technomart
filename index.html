@@ -8,41 +8,37 @@
   <body>
     <header class="header">
       <div class="header-banner">
-        <div class="container">
-          <h1 class="header-banner-text">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="container header-banner-container">
+          <h1 class="header-banner-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <address class="header-banner-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="header-banner-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
       </div>
-      <div class="header-row">
-        <div class="container">
-          <a class="logo header-logo" href="index.html" aria-current="page">
+      <div class="header-menu">
+        <div class="container header-menu-container">
+          <a class="logo" href="index.html" aria-current="page">
             <img src="images/logos/logo.svg" width="108" height="18" alt="Логотип магазина: слово Техномарт, написанное белыми заглавными буквами на красном фоне.">
           </a>
           <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
-            <input class="header-search-field" type="search" name="header-search" id="header-search" placeholder="Поиск:">
+            <input class="header-search-field" type="search" name="header-search" id="header-search" value="Поиск:" placeholder="Поиск по сайту">
             <button class="visually-hidden" type="submit">Искать.</button>
           </form>
           <!-- logged-out - для разлогиненного состояния, делает login-logged-out видимым -->
           <!-- logged-in - для залогиненного состояния, делает login-logged-in видимым -->
           <div class="login-wrapper logged-out">
-            <div class="login login-logged-in">
-              <a class="login-user popup-control" href="#">
-                <img src="images/icons/profile.svg" width="16" height="16" alt="">
-                <span class="login-username">Равшан Джамшутович</span>
-              </a>
+            <div class="login login-logged-out popup-control">
               <a class="login-button" href="#">
-                <span class="visually-hidden">Выйти.</span>
+                <span>Войти</span>
               </a>
-              <div class="popup login-popup login-popup-logged-in">
-                <h2 class="login-popup-title">Личный кабинет</h2>
+              <div class="popup login-popup login-popup-logged-out">
+                <h2 class="login-popup-title title-small">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
                   <fieldset class="login-form-group">
                     <label class="visually-hidden" for="login-field">Введите логин.</label>
-                    <input class="login-field" type="text" name="login-field" id="login-field" placeholder="Ваш e-mail" required>
+                    <input class="login-field" type="text" name="login-field" id="login-field" placeholder="Ваш e-mail" value="Логин" required>
                     <label class="visually-hidden" for="login-password-field">Введите пароль.</label>
-                    <input class="login-field" type="password" name="login-password-field" id="login-password-field" required>
+                    <input class="login-field" type="password" name="login-password-field" id="login-password-field" value="Пароль" required>
                     <label class="control login-control">
                       <input class="control-input login-control-input" type="checkbox" name="remember-me" checked>
                       <span class="control-label login-control-label">Запомнить меня</span>
@@ -50,65 +46,75 @@
                     <a class="login-form-link" href="#">Забыл пароль</a>
                   </fieldset>
                   <div class="login-form-buttons">
-                    <button class="button login-form-button-login" type="submit">Войти</button>
-                    <a class="button button-bordered" href="#">Регистрация</a>
+                    <button class="button button-secondary login-popup-button login-popup-button-login" type="submit">Войти</button>
+                    <a class="button button-bordered login-popup-button" href="#">Регистрация</a>
                   </div>
                 </form>
-                <button class="login-popup-close" type="button">
+                <button class="popup-close" type="button">
                   <span class="visually-hidden">Закрыть всплывающее окно.</span>
                 </button>
               </div>
             </div>
-            <div class="login login-logged-out">
-              <a class="login-button" href="#">
-                <span>Войти</span>
-              </a>
-              <div class="popup login-popup login-popup-logged-out">
-                <h2 class="login-popup-title">Здравствуйте, <span class="login-popup-username">Равшан Джамшутович</span></h2>
-                <a class="login-popup-link" href="#">Мои заказы</a>
-                <a class="login-popup-link" href="#">Личный кабинет</a>
-                <button class="button button-bordered" type="button">Выйти</button>
-                <button class="login-popup-close" type="button">
-                  <span class="visually-hidden">Закрыть всплывающее окно.</span>
-                </button>
+            <div class="login login-logged-in">
+              <div class="popup-control">
+                <a class="login-user" href="#">
+                  <img src="images/icons/profile.svg" width="16" height="16" alt="">
+                  <span class="login-username">Равшан Джамшутович</span>
+                </a>
+                <div class="popup login-popup login-popup-logged-in">
+                  <h2 class="login-popup-title title-small">Здравствуйте, <span class="login-popup-username">Равшан Джамшутович</span></h2>
+                  <div class="login-popup-links">
+                    <a class="login-popup-link" href="#">Мои заказы</a>
+                    <a class="login-popup-link" href="#">Личный кабинет</a>
+                  </div>
+                  <button class="button button-bordered login-popup-button" type="button">Выйти</button>
+                  <button class="popup-close" type="button">
+                    <span class="visually-hidden">Закрыть всплывающее окно.</span>
+                  </button>
+                </div>
               </div>
+              <a class="login-button logout-button" href="#">
+                <span class="visually-hidden">Выйти.</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <nav class="nav">
-        <div class="container">
+        <div class="container nav-container">
           <ul class="nav-list list-reset">
             <li class="nav-item">
-              <a class="nav-link" href="#">Главная</a>
+              <a class="nav-link" href="#" title="Главная">Главная</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Компания</a>
+              <a class="nav-link" href="#" title="Компания">Компания</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Каталог</a>
+              <a class="nav-link" href="#" title="Каталог">Каталог</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Новости</a>
+              <a class="nav-link" href="#" title="Новости">Новости</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Спецпредложения</a>
+              <a class="nav-link" href="#" title="Спецпредложения">Спецпредложения</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Доставка</a>
+              <a class="nav-link" href="#" title="Доставка">Доставка</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#" title="Контакты">Контакты</a>
             </li>
           </ul>
           <div class="nav-menu">
+            <!-- .nav-menu-button -->
             <a class="nav-menu-button nav-menu-button-bookmarks" href="#">
               <span class="visually-hidden">Перейти в закладки.</span>
-              <span class="nav-menu-button-counter"></span>
+              <!-- класс counter-visible для nav-menu-button-counter делает видимым счетчик -->
+              <span class="nav-menu-button-counter">12</span>
             </a>
             <a class="nav-menu-button nav-menu-button-cart" href="#">
               <span class="visually-hidden">Перейти в корзину.</span>
-              <span class="nav-menu-button-counter"></span>
+              <span class="nav-menu-button-counter">3</span>
             </a>
             <a class="button button-secondary nav-menu-order" href="#">Оформить заказ</a>
           </div>
@@ -116,77 +122,75 @@
       </nav>
     </header>
     <main class="main">
-      <section class="hero">
-        <div class="container">
-          <div class="slider">
-            <h2 class="visually-hidden">Промо-слайдер.</h2>
-            <!-- Слайды -->
-            <ul class="slider-list list-reset">
-              <li class="slider-item">
-                <h3 class="title slider-title">Дрели</h3>
-                <p class="slider-subtitle">Соседям на радость!</p>
-                <a class="button slider-button" href="#">Открыть каталог</a>
-              </li>
-              <li class="slider-item">
-                <h3 class="title slider-title">Перфораторы</h3>
-                <p class="slider-subtitle">Соседям на радость!</p>
-                <a class="button slider-button" href="#">Открыть каталог</a>
-              </li>
-            </ul>
-            <!-- Стрелки -->
-            <div class="slider-controls">
-              <button class="slider-arrow slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий слайд.</span>
-              </button>
-              <button class="slider-arrow slider-next" type="button">
-                <span class="visually-hidden">Следующий слайд.</span>
-              </button>
-            </div>
-            <!-- Буллеты -->
-            <ol class="slider-bullets list-reset">
-              <li>
-                <button class="slider-bullet slider-bullet-current" type="button">
-                  <span class="visually-hidden">Первый слайд.</span>
-                </button>
-              </li>
-              <li>
-                <button class="slider-bullet" type="button">
-                  <span class="visually-hidden">Второй слайд.</span>
-                </button>
-              </li>
-              <li>
-                <button class="slider-bullet" type="button">
-                  <span class="visually-hidden">Третий слайд.</span>
-                </button>
-              </li>
-            </ol>
-          </div>
+      <div class="container">
+        <section class="hero">
           <ul class="promo-list list-reset">
-            <li class="promo-item promo-item-new">
-              <h2 class="promo-item-title">Материалы</h2>
+            <li class="promo-item promo-item-materials promo-item-new">
+              <h2 class="promo-item-title title-small">Материалы</h2>
               <a class="promo-item-button" href="#">На любой вкус</a>
             </li>
-            <li class="promo-item promo-item-new">
-              <h2 class="promo-item-title">Инструмент</h2>
+            <li class="promo-item promo-item-tools">
+              <h2 class="promo-item-title title-small">Инструмент</h2>
               <a class="promo-item-button" href="#">На все случаи </a>
             </li>
-            <li class="promo-item promo-item-new">
-              <h2 class="promo-item-title">Техника</h2>
+            <li class="promo-item promo-item-machinery">
+              <h2 class="promo-item-title title-small">Техника</h2>
               <a class="promo-item-button" href="#">Для стройки</a>
             </li>
-            <li class="promo-item promo-item-new">
-              <h2 class="promo-item-title">Скидки 50%</h2>
+            <li class="promo-item promo-item-discount">
+              <h2 class="promo-item-title title-small">Скидки 50%</h2>
               <a class="promo-item-button" href="#">На 350 товаров</a>
             </li>
-            <li class="promo-item promo-item-new">
-              <h2 class="promo-item-title">Доставка</h2>
+            <li class="promo-item promo-item-delivery">
+              <h2 class="promo-item-title title-small">Доставка</h2>
               <a class="promo-item-button" href="#">Бесплатно</a>
             </li>
+            <li class="slider">
+              <h2 class="visually-hidden">Промо-слайдер.</h2>
+              <!-- Слайды -->
+              <ul class="slider-list list-reset">
+                <li class="slider-item slider-item-active slider-item-drill">
+                  <h3 class="title slider-title">Дрели</h3>
+                  <p class="slider-subtitle">Соседям на радость!</p>
+                  <a class="button slider-button" href="#">Открыть каталог</a>
+                </li>
+                <li class="slider-item slider-item-hammerdrill">
+                  <h3 class="title slider-title">Перфораторы</h3>
+                  <p class="slider-subtitle">Соседям на радость!</p>
+                  <a class="button slider-button" href="#">Открыть каталог</a>
+                </li>
+              </ul>
+              <!-- Стрелки -->
+              <div class="slider-controls">
+                <button class="slider-arrow slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущий слайд.</span>
+                </button>
+                <button class="slider-arrow slider-next" type="button">
+                  <span class="visually-hidden">Следующий слайд.</span>
+                </button>
+              </div>
+              <!-- Буллеты -->
+              <ol class="slider-bullets list-reset">
+                <li>
+                  <button class="slider-bullet slider-bullet-current" type="button">
+                    <span class="visually-hidden">Первый слайд.</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="slider-bullet" type="button">
+                    <span class="visually-hidden">Второй слайд.</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="slider-bullet" type="button">
+                    <span class="visually-hidden">Третий слайд.</span>
+                  </button>
+                </li>
+              </ol>
+            </li>
           </ul>
-        </div>
-      </section>
-      <section class="catalog">
-        <div class="container">
+        </section>
+        <section class="catalog">
           <h2 class="title catalog-title">Перфораторы</h2>
           <section class="filters">
             <h3 class="visually-hidden">Параметры фильтрации.</h3>
@@ -285,105 +289,105 @@
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
                 <span class="product-card-old-price">22500 ₽</span>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
                 <span class="product-card-old-price">22500 ₽</span>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card product-card-new">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card product-card-new">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card product-card-new">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card product-card-new">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
-                  </div>
-                </div>
-                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
-                <span class="product-card-old-price">22500 ₽</span>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
-              </li>
-              <li class="product-card product-card-new">
-                <div class="product-card-img-wrapper">
-                  <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
-                  <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
                 <span class="product-card-old-price">22500 ₽</span>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
+              </li>
+              <li class="product-card product-card-new">
+                <div class="product-card-img-wrapper">
+                  <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
+                  <div class="product-card-button-wrapper">
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
+                  </div>
+                </div>
+                <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
+                <span class="product-card-old-price">22500 ₽</span>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
                 <span class="product-card-old-price">22500 ₽</span>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
               <li class="product-card product-card-new">
                 <div class="product-card-img-wrapper">
                   <img src="images/hammerdrill.jpg" width="216" height="180" alt="Перфоратор Bosch GBH 2-26 DFR Professional. Основные цвета: черный, синий, красные акценты.">
                   <div class="product-card-button-wrapper">
-                    <button class="button button-secondary" type="button">Купить</button>
-                    <button class="button button-bordered" type="button">В закладки</button>
+                    <button class="button button-secondary product-card-button product-card-button-buy" type="button">Купить</button>
+                    <button class="button button-bordered product-card-button" type="button">В закладки</button>
                   </div>
                 </div>
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 3000</h4>
-                <a class="product-card-new-price" href="#">15500 ₽</a>
+                <a class="button button-arrow" href="#">15500 ₽</a>
               </li>
             </ul>
             <div class="pagination">
@@ -401,51 +405,49 @@
                   <a class="pagination-link" href="#">4</a>
                 </li>
               </ol>
-              <a class="button results-button" href="#">Загрузить ещё</a>
+              <a class="button results-button" href="#">Показать еще</a>
             </div>
           </section>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="services">
-        <div class="container">
+        <div class="container services-container">
           <h2 class="title services-title">Сервисы</h2>
           <p class="services-subtitle">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <ul class="services-list list-reset">
             <li class="services-item">
-              <h3 class="services-item-title">Доставка</h3>
+              <h3 class="services-item-title title-small">Доставка</h3>
               <p class="services-item-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </li>
             <li class="services-item">
-              <h3 class="services-item-title">Гарантия</h3>
+              <h3 class="services-item-title title-small">Гарантия</h3>
               <p class="services-item-content">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
             </li>
             <li class="services-item">
-              <h3 class="services-item-title">Кредит</h3>
+              <h3 class="services-item-title title-small">Кредит</h3>
               <p class="services-item-content">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. Все как в банке, только проще!</p>
             </li>
           </ul>
         </div>
       </section>
-      <div class="about-contacts-wrapper">
-        <div class="container">
-          <section class="about">
-            <h2 class="title about-title">Компания «Техномарт»</h2>
-            <p class="about-content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p class="about-content">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-            <a class="button about-button" href="#">О компании</a>
-          </section>
-          <section class="contacts">
-            <h2 class="title contacts-title">Контакты</h2>
-            <p class="contacts-content">Вы можете забрать товар сами,  заехав в наш офис:</p>
-            <a class="contacts-map-wrapper" href="#">
-              <img src="images/map.jpg" alt="Карта проезда. Адрес компании: Большая Конюшенная улица, 19/8.">
-            </a>
-          </section>
-        </div>
+      <div class="container about-contacts-container">
+        <section class="about">
+          <h2 class="title about-title">Компания «Техномарт»</h2>
+          <p class="about-content">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="about-content">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <a class="button about-button" href="#">О компании</a>
+        </section>
+        <section class="contacts">
+          <h2 class="title contacts-title">Контакты</h2>
+          <p class="contacts-content">Вы можете забрать товар сами,  заехав в наш офис:</p>
+          <a class="contacts-map-wrapper" href="#">
+            <img src="images/map.jpg" alt="Карта проезда. Адрес компании: Большая Конюшенная улица, 19/8.">
+          </a>
+        </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="container footer-wrapper">
+      <div class="container footer-container">
         <a class="logo footer-logo" href="index.html" aria-current="page">
           <img src="images/logos/logo-footer.svg" width="108" height="20" alt="Логотип магазина: слово Техномарт, написано белыми заглавными буквами на красном фоне.">
         </a>
