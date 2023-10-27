@@ -142,6 +142,28 @@ img {
   background-repeat: no-repeat;
 }
 
+/* titles */
+
+.title {
+  margin: 0;
+
+  font-family: "Fira Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.title-small {
+  margin: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 .main {
   flex-grow: 1; /* sticky footer */
 }
