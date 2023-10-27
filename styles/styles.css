@@ -164,6 +164,69 @@ img {
   text-transform: uppercase;
 }
 
+/* checkboxes and radiobuttons */
+
+.control {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.control-input {
+  position: relative;
+
+  width: 21px;
+  height: 21px;
+  margin: 0;
+
+  border: 2px solid #3d546f;
+
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.control-input:disabled + .control-label {
+  opacity: 0.4;
+}
+
+.control-input[type="checkbox"] {
+  border-radius: 2px;
+}
+
+.control-input[type="checkbox"]:checked {
+  background-image: url("../images/icons/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 7px;
+}
+
+.control-input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #3d546f;
+  border-radius: 50%;
+}
+
+.control-label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
 .main {
   flex-grow: 1; /* sticky footer */
 }
