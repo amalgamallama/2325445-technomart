@@ -81,6 +81,67 @@ img {
   overflow: hidden;
 }
 
+/* buttons */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: #ee3643;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  padding: 11px 10px;
+  background-color: #63a63e;
+}
+
+.button-bordered {
+  padding: 9px 8px;
+  color: #32425c;
+  background-color: #ffffff;
+  border: 2px solid #63a63e;
+}
+
+.button-arrow {
+  position: relative;
+  padding: 11px;
+  max-width: 122px;
+  border-radius: 3px 5px 5px 3px;
+}
+
+.button-arrow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -17px;
+
+  display: block;
+  width: 21px;
+  height: 40px;
+
+  background-image: url("../images/icons/price-button.svg");
+  background-repeat: no-repeat;
+}
+
 .main {
   flex-grow: 1; /* sticky footer */
 }
