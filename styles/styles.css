@@ -1633,3 +1633,155 @@ img {
   display: block;
   object-fit: cover;
 }
+
+.footer {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.footer-container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+
+  padding-top: 15px;
+  padding-bottom: 33px;
+}
+
+.footer-logo {
+  position: absolute;
+
+  padding: 15px 0;
+  height: 50px;
+
+  box-shadow: 0 6px #b52933;
+}
+
+.footer-contacts {
+  margin-top: 62px;
+}
+
+.footer-address {
+  margin-bottom: 1px;
+
+  font-style: normal;
+  color: #f3f7f9;
+}
+
+.footer-phone {
+  display: inline-block;
+  margin-bottom: 21px;
+
+  color: #f3f7f9;
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: grid;
+  grid-template-columns: repeat(3, 36px);
+  gap: 5px;
+}
+
+.footer-socials-item {
+  display: block;
+  height: 36px;
+}
+
+.footer-socials-link {
+  display: block;
+  height: 100%;
+}
+
+.footer-feedback {
+  margin-bottom: 29px;
+  text-align: right;
+}
+
+.footer-section-title {
+  margin: 0;
+  margin-bottom: 1px;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-link {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-subscribe {
+  text-align: right;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  margin-top: 2px; /* pixel perfect */
+  margin-left: auto;
+  width: 260px;
+}
+
+.footer-subscribe-field {
+  padding: 9px 15px 11px;
+  width: 223px;
+  height: 40px;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #293449;
+
+  background-color: #ffffff;
+  border: 1px solid #63a63e;
+  border-radius: 2px;
+}
+
+.footer-subscribe-field::placeholder {
+  color: #bdbdbd;
+}
+
+.footer-subscribe-button {
+  flex-shrink: 0;
+
+  margin-left: -3px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-subscribe-button::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  -webkit-mask-image: url("../images/icons/cart.svg");
+          mask-image: url("../images/icons/cart.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 18px 18px;
+          mask-size: 18px 18px;
+  background-color: #ffffff;
+}
+
+.copyright {
+  background-color: #293449;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+
+  padding: 21px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.copyright-content {
+  margin: 0;
+}
