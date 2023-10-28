@@ -1420,13 +1420,18 @@ img {
 }
 
 .product-card-title {
-  margin: 0;
   margin-bottom: 14px;
   width: 230px;
 
   font-size: 20px;
   line-height: 26px;
+  color: #293449;
   text-align: center;
+  text-decoration: none;
+}
+
+.product-card-title h4 {
+  margin: 0;
 }
 
 .product-card-old-price {
@@ -1566,9 +1571,65 @@ img {
 
 .services-item-content {
   margin: 0;
+  color: #000000;
 }
 
 .services-item-guarantee .services-item-content {
   margin-left: 5px;
 }
 
+.about-contacts-container {
+  display: grid;
+  grid-template-columns: 550px 500px;
+  justify-content: space-between;
+
+  padding-top: 52px;
+  padding-bottom: 49px;
+}
+
+.about {
+  margin-left: 1px; /* pixel perfect */
+}
+
+.about-title {
+  margin-bottom: 23px;
+}
+
+.about-content {
+  margin: 0;
+  margin-bottom: 24px;
+  max-width: 520px;
+}
+
+.about-content:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-button {
+  width: 195px;
+  margin-top: 52px;
+}
+
+.contacts-title {
+  margin-bottom: 23px;
+}
+
+.contacts-content {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-map {
+  display: block;
+  width: 500px;
+  height: 347px;
+
+  color: #293449;
+  text-decoration: none;
+  background-color: #f1f5f7;
+}
+
+.contacts-map img {
+  display: block;
+  object-fit: cover;
+}
