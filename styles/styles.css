@@ -46,6 +46,7 @@ body {
   display: flex; /* sticky footer */
   flex-direction: column; /* sticky footer */
   margin: 0;
+  min-width: 1400px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -2118,4 +2119,3 @@ img {
 .copyright-content {
   margin: 0;
 }
-
